@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mảng</title>
+</head>
+<body>
+<script>
+    var num=prompt();
+    var i = num.toString();
+    var result = [i[0]];
+
+    for(var x=1; x<i.length; x++)
+    {
+        if((i[x-1]%2 == 0)&&(i[x]%2 == 0))
+        {
+            result.push('-', i[x]);
+        }
+        else
+        {
+            result.push(i[x]);
+        }
+    }
+document.write(result.join(''));
+</script>
+</body>
+</html>
